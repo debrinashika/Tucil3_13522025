@@ -58,7 +58,6 @@ public class Astar {
                 System.out.println("End Node: " + currentNode.getWord());
                 System.out.println("Total Cost: " + currentPath.getCost());
                 System.out.println("length: " + currentPath.getpath().size());
-                System.out.println("Path: " + currentPath.getpath());
                 currentPath.getpath().add(currentNode.getWord());
                 executor.shutdown(); 
                 return currentPath.getpath();

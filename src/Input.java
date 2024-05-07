@@ -1,4 +1,5 @@
 package src;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Input {
@@ -47,8 +48,6 @@ public class Input {
         Runtime runtime = Runtime.getRuntime();
         long totalMemory = runtime.totalMemory();
 
-
-        System.out.println(Input.startinput);
         
         Node startNode = new Node(Input.startinput);
 
@@ -69,16 +68,30 @@ public class Input {
             System.out.println("Number is not valid! Please input number");
         }
 
+        ArrayList<String> path = new ArrayList<String>();
+        int visited = 0;
+        long startTime = System.currentTimeMillis();
+
         if(num==1){
-            UCS.solveUCS();
+            path = UCS.solveUCS();
         } else if (num==2){
-            BFS.solveBFS();
+            path = BFS.solveBFS();
         } else if (num==3){
-            Astar.solveAstar();
+            path = Astar.solveAstar();
         }
+
+        long endTime = System.currentTimeMillis();
 
         long freeMemory = runtime.freeMemory();
         long usedMemory = totalMemory - freeMemory;
+        if(path.size()>0){
+            System.out.println("Path: " + String.join(" -> ", path) + "\n");
+        }
+        else{
+            System.out.println("No Solution");
+        }
+        System.out.println("Visited Nodes: " + visited);
+        System.out.println("Execution Time (ms): " + (endTime - startTime));
         System.out.println("Total Memory: " + totalMemory / (1024 * 1024) + " MB");
         System.out.println("Free Memory: " + freeMemory / (1024 * 1024) + " MB");
         System.out.println("Used Memory: " + usedMemory / (1024 * 1024) + " MB");
