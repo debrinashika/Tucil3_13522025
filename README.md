@@ -28,7 +28,7 @@ The Word Ladder Solver program with three search algorithms—Uniform Cost Searc
 - Choose the algorithm
 - Enter the find path button
 
-
+## Author
 
 | Names                     | NIM      |
 | ----------------------    |:--------:|
