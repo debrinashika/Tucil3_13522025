@@ -18,8 +18,8 @@ The Word Ladder Solver program with three search algorithms—Uniform Cost Searc
 
 ## Usage
 - Compile the program `javac src/*java`
-- If you want to use the GUI, use this command `java MainGUI`
-- If you want to use the CLI, use this command `java Input`
+- If you want to use the GUI, use this command `java src/MainGUI`
+- If you want to use the CLI, use this command `java src/Input`
 
 ## How to Use 
 <img src="/img/2.png/">
