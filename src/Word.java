@@ -12,7 +12,7 @@ public class Word {
 
     static {
         // Load dictionary
-        try (BufferedReader reader = new BufferedReader(new FileReader("dictionary.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/dictionary.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 // tambahkan kata pada string

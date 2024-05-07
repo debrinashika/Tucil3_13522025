@@ -54,7 +54,7 @@ public class BFS {
 
             // jika node saat ini adalah goal maka return hasil
             if (currentNode.getWord().equals(Input.targetinput)) {
-                System.out.println("Astar FOUND!!!");
+                System.out.println("BFS FOUND!!!");
                 System.out.println("End Node: " + currentNode.getWord());
                 System.out.println("Total Cost: " + currentPath.getCost());
                 System.out.println("length: " + currentPath.getpath().size());

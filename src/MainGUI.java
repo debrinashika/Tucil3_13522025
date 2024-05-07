@@ -6,13 +6,13 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 
-public class GUI extends JFrame {
+public class MainGUI extends JFrame {
     private JTextField startWordField, endWordField;
     private JComboBox<String> algorithmComboBox;
     private JButton findPathButton;
     private JTextArea resultArea;
 
-    public GUI() {
+    public MainGUI() {
         setTitle("Word Ladder Solver");
         setSize(500, 450); 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -183,7 +183,7 @@ public class GUI extends JFrame {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                new GUI();
+                new MainGUI();
             }
         });
     }
