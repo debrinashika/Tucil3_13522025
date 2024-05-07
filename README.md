@@ -23,9 +23,12 @@ The Word Ladder Solver program with three search algorithms—Uniform Cost Searc
 
 ## How to Use 
 <img src="/img/2.png/">
+
 - Enter the start word and end word
 - Choose the algorithm
 - Enter the find path button
+
+
 
 | Names                     | NIM      |
 | ----------------------    |:--------:|
